@@ -6,6 +6,7 @@ function Board({ player1Name, player2Name, setPlayer1Wins, setPlayer2Wins, playe
   const [xIsNext, setXIsNext] = useState(true);
   const winner = calculateWinner(squares);
   const [isDraw, setIsDraw] = useState(false);
+  const [showNextRoundButton, setShowNextRoundButton] = useState(false);
 
   useEffect(() => {
     if (squares.every(square => square) && !winner) {
@@ -40,7 +41,18 @@ function Board({ player1Name, player2Name, setPlayer1Wins, setPlayer2Wins, playe
     setSquares(Array(9).fill(null));
     setXIsNext(true);
     setIsDraw(false);
+    setShowNextRoundButton(false);
   };
+
+  const handleNextRound = () => {
+    resetGame();
+  };
+
+  useEffect(() => {
+    if (winner) {
+      setShowNextRoundButton(true);
+    }
+  }, [winner]);
 
   useEffect(() => {
     if (winner) {
@@ -49,7 +61,6 @@ function Board({ player1Name, player2Name, setPlayer1Wins, setPlayer2Wins, playe
       } else {
         setPlayer2Wins(prev => prev + 1);
       }
-      resetGame();
     }
   }, [winner, setPlayer1Wins, setPlayer2Wins]);
 
@@ -74,7 +85,11 @@ function Board({ player1Name, player2Name, setPlayer1Wins, setPlayer2Wins, playe
           />
         ))}
       </div>
-      <button onClick={resetGame}>Reset Game</button>
+      {showNextRoundButton ? (
+        <button onClick={handleNextRound}>Next Round</button>
+      ) : (
+        <button onClick={resetGame}>Reset Game</button>
+      )}
     </div>
   );
 }
