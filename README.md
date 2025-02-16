@@ -1,6 +1,6 @@
-# Tic Tac Toe 🕹️
+# Tic Tac Toe 3.0 🕹️
 
-A classic Tic Tac Toe game built with React. This project allows two players to compete against each other in a simple and intuitive interface. The game tracks scores and determines an overall winner after multiple rounds.
+A classic Tic Tac Toe game built with React. This project allows two players to compete against each other in a simple and intuitive interface. The game tracks scores and determines an overall winner after 5 wins.
 
 ## Table of Contents
 
@@ -11,6 +11,7 @@ A classic Tic Tac Toe game built with React. This project allows two players to 
 5.  [Skills Used](#skills-used)
 6.  [License](#license)
 7.  [About Me](#about-me)
+8.  [Live Demo](#live-demo)
 
 ## Badges
 
@@ -107,3 +108,7 @@ Created by Rafael Nogueira
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Live Demo
+
+Check out the live demo [here](https://tic-tac-toe-3-0.vercel.app/).
