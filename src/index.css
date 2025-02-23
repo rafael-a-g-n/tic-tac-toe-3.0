@@ -129,13 +129,14 @@ button:hover {
   .board {
     margin: 0 auto; 
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px; 
+    grid-gap: 5px; 
     width: 100%;
-    padding: 10px;
+    padding: 5px;
   }
 
 .square {
     width: 100%;
+	hight:100%;
     font-size: 2em;
   }
 }
