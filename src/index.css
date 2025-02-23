@@ -128,15 +128,16 @@ button:hover {
 @media (max-width: 600px) {
   .board {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
+    grid-gap: 10px;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
   }
 
   .square {
+	text-align: center;  
     width: 100%;
     padding-top: 100%; /* Maintain aspect ratio */
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .status, .score, .overall-winner {
