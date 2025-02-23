@@ -136,7 +136,7 @@ button:hover {
 
   .square {
     width: 100%;
-    padding-top: 100%;
+    padding-top: 80%;
     font-size: 2em;
     position: relative;
   }
@@ -144,7 +144,7 @@ button:hover {
   .square::before {
     content: "";
     display: block;
-    padding-top: 100%;
+    padding-top: 80%;
   }
 
   .square > * {
