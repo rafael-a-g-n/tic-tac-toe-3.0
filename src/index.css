@@ -134,4 +134,8 @@ button:hover {
     padding: 5px;
   }
 
+.square {
+    width: 100%;
+    font-size: 2em;
+  }
 }
