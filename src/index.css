@@ -129,7 +129,7 @@ button:hover {
   .board {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    width: 100%;
+    width: 85%;
     padding: 10px;
   }
 }
