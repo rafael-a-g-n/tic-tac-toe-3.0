@@ -127,10 +127,16 @@ button:hover {
 
 @media (max-width: 600px) {
   .board {
-	margin-right: 10px;
+    margin: 0 auto; /* Center the board */
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    width: 85%;
-    padding: 10px;
+    grid-gap: 5px; /* Reduce gap to fit better */
+    width: 100%;
+    padding: 5px; /* Reduce padding to fit better */
+  }
+
+  .square {
+    width: 100%;
+    padding-top: 100%; /* Maintain aspect ratio */
+    font-size: 2em; /* Adjust font size for smaller screens */
   }
 }
