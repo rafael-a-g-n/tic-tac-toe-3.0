@@ -105,9 +105,6 @@ Created by Rafael Nogueira
 *   [GitHub](https://github.com/rafael-a-g-n)
 *   [LinkedIn](https://www.linkedin.com/in/ragn/)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Live Demo
 
