@@ -127,6 +127,7 @@ button:hover {
 
 @media (max-width: 600px) {
   .board {
+	margin-right: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     width: 85%;
