@@ -135,8 +135,9 @@ button:hover {
   }
 
   .square {
-    width: 75%;
-    padding-top: 50%;
+    width: 100%;
+	max-height: 50%;  
+    padding-top: 40%;
     font-size: 2em;
   }
 }
